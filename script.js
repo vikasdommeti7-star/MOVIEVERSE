@@ -27,7 +27,7 @@ trailerLink = "https://www.youtube.com/watch?v=bD5FShPZdpw";
 }
 
 document.getElementById("trailerBtn").onclick = function(){
-window.open(trailerLink, "_blank");
+window.location.href = trailerLink;
 };
 
 document.getElementById("movieModal").style.display = "flex";
