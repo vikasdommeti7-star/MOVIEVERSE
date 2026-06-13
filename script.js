@@ -84,30 +84,3 @@ movie.style.display = "none";
 }
 
 });
-function openMovie(title, desc, rating, image){
-
-// movie modal code
-
-}
-
-// close button
-document.querySelector(".close").onclick = function(){
-
-document.getElementById("movieModal").style.display = "none";
-
-document.getElementById("trailerFrame").src = "";
-
-}
-
-// ESC key close
-document.addEventListener("keydown", function(event){
-
-if(event.key === "Escape"){
-
-document.getElementById("movieModal").style.display = "none";
-
-document.getElementById("trailerFrame").src = "";
-
-}
-
-});
