@@ -65,5 +65,11 @@ movie.style.display = "none";
 });
 
 }
+const themeBtn = document.getElementById("themeBtn");
 
+themeBtn.onclick = function(){
+
+document.body.classList.toggle("light-mode");
+
+};
 });
