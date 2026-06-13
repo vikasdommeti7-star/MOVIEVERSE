@@ -1,4 +1,4 @@
-function openMovie(title, desc, rating, image){
+function openMovie(title, desc, rating, image) {
 
 document.getElementById("modalTitle").innerText = title;
 document.getElementById("modalDesc").innerText = desc;
@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function(){
 const closeBtn = document.querySelector(".close");
 
 if(closeBtn){
+
 closeBtn.onclick = function(){
 
 document.getElementById("movieModal").style.display = "none";
@@ -51,6 +52,7 @@ frame.src = "";
 }
 
 };
+
 }
 
 const searchBox = document.querySelector(".search-box");
@@ -81,17 +83,4 @@ movie.style.display = "none";
 
 }
 
-const themeBtn = document.getElementById("themeBtn");
-
-if(themeBtn){
-
-themeBtn.onclick = function(){
-
-document.body.classList.toggle("light-mode");
-
-};
-
-}
-
 });
-```
