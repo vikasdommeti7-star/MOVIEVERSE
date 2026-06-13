@@ -37,11 +37,11 @@ document.getElementById("movieModal").style.display = "flex";
 
 document.addEventListener("DOMContentLoaded", function(){
 
+// Close Button
 const closeBtn = document.querySelector(".close");
 
 if(closeBtn){
-
-closeBtn.onclick = function(){
+closeBtn.addEventListener("click", function(){
 
 document.getElementById("movieModal").style.display = "none";
 
@@ -51,10 +51,48 @@ if(frame){
 frame.src = "";
 }
 
-};
+});
+}
+
+// Click outside modal to close
+const modal = document.getElementById("movieModal");
+
+if(modal){
+modal.addEventListener("click", function(e){
+
+if(e.target === modal){
+
+modal.style.display = "none";
+
+const frame = document.getElementById("trailerFrame");
+
+if(frame){
+frame.src = "";
+}
 
 }
 
+});
+}
+
+// ESC key close
+document.addEventListener("keydown", function(event){
+
+if(event.key === "Escape"){
+
+document.getElementById("movieModal").style.display = "none";
+
+const frame = document.getElementById("trailerFrame");
+
+if(frame){
+frame.src = "";
+}
+
+}
+
+});
+
+// Search Function
 const searchBox = document.querySelector(".search-box");
 
 if(searchBox){
