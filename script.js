@@ -1,4 +1,3 @@
-```javascript
 function openMovie(title, desc, rating, image){
 
 document.getElementById("modalTitle").innerText = title;
