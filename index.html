@@ -10,16 +10,19 @@
 <script>
 const searchBox = document.querySelector(".search-box");
 
+<script>
+const searchBox = document.querySelector(".search-box");
+
 searchBox.addEventListener("keyup", function() {
 
 let searchValue = searchBox.value.toLowerCase();
 
-let movies = document.querySelectorAll(".card");
+let movies = document.querySelectorAll(".movie-card");
 
 movies.forEach(function(movie){
 
 let movieName =
-movie.querySelector("h3").textContent.toLowerCase();
+movie.querySelector("h3").innerText.toLowerCase();
 
 if(movieName.includes(searchValue)){
 movie.style.display = "block";
