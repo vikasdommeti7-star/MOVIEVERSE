@@ -7,34 +7,7 @@
 <title>MovieVerse</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<script>
-const searchBox = document.querySelector(".search-box");
 
-<script>
-const searchBox = document.querySelector(".search-box");
-
-searchBox.addEventListener("keyup", function() {
-
-let searchValue = searchBox.value.toLowerCase();
-
-let movies = document.querySelectorAll(".movie-card");
-
-movies.forEach(function(movie){
-
-let movieName =
-movie.querySelector("h3").innerText.toLowerCase();
-
-if(movieName.includes(searchValue)){
-movie.style.display = "block";
-}
-else{
-movie.style.display = "none";
-}
-
-});
-
-});
-</script>
 <body>
 
 <header>
@@ -48,17 +21,33 @@ movie.style.display = "none";
 <li>Upcoming</li>
 <li>Contact</li>
 </ul>
+
 </nav>
 </header>
 
 <section class="hero">
-<div class="hero-content">
-<h1>Unlimited Movies, Reviews & Entertainment</h1>
-<p>Discover trending movies from around the world.</p>
 
-<input type="text" placeholder="Search Movies..." class="search-box">
-<button class="btn">Explore Now</button>
+<div class="hero-content">
+
+<h1>Unlimited Movies, Reviews & Entertainment</h1>
+
+<p>
+Discover trending movies from around the world.
+</p>
+
+<input
+type="text"
+placeholder="Search Movies..."
+class="search-box">
+
+<br><br>
+
+<button class="btn">
+Explore Now
+</button>
+
 </div>
+
 </section>
 
 <section class="movies-section">
@@ -68,31 +57,55 @@ movie.style.display = "none";
 <div class="movies">
 
 <div class="card movie-card"
-onclick="openMovie('Baahubali 2','An epic historical action film directed by S.S. Rajamouli.','8.8/10','Baahubali 2.jpeg')">
+onclick="openMovie(
+'Baahubali 2',
+'An epic historical action film directed by S.S. Rajamouli.',
+'8.8/10',
+'Baahubali 2.jpeg'
+)">
 
-<img src="Baahubali 2.jpeg" alt="Baahubali 2">
+<img src="Baahubali 2.jpeg">
+
 <h3>Baahubali 2</h3>
+
 <p>⭐ 8.8/10</p>
+
 <p>🎭 Action, Drama</p>
 
 </div>
 
 <div class="card movie-card"
-onclick="openMovie('RRR','A historical action drama directed by S.S. Rajamouli.','8.7/10','RRR.jpeg')">
+onclick="openMovie(
+'RRR',
+'A historical action drama directed by S.S. Rajamouli.',
+'8.7/10',
+'RRR.jpeg'
+)">
 
-<img src="RRR.jpeg" alt="RRR">
+<img src="RRR.jpeg">
+
 <h3>RRR</h3>
+
 <p>⭐ 8.7/10</p>
+
 <p>🎭 Action, Historical</p>
 
 </div>
 
 <div class="card movie-card"
-onclick="openMovie('Spider-Man','Peter Parker balances his life as a student and superhero.','8.5/10','SPIDERMAN.webp')">
+onclick="openMovie(
+'Spider-Man',
+'Peter Parker balances his life as a student and superhero.',
+'8.5/10',
+'SPIDERMAN.webp'
+)">
 
-<img src="SPIDERMAN.webp" alt="Spider-Man">
+<img src="SPIDERMAN.webp">
+
 <h3>Spider-Man</h3>
+
 <p>⭐ 8.5/10</p>
+
 <p>🎭 Action, Sci-Fi</p>
 
 </div>
@@ -108,31 +121,55 @@ onclick="openMovie('Spider-Man','Peter Parker balances his life as a student and
 <div class="movies">
 
 <div class="card movie-card"
-onclick="openMovie('The Avengers','Earths mightiest heroes unite to save the world.','8.9/10','THE AVENGERS.webp')">
+onclick="openMovie(
+'The Avengers',
+'Earths mightiest heroes unite to save the world.',
+'8.9/10',
+'THE AVENGERS.webp'
+)">
 
-<img src="THE AVENGERS.webp" alt="The Avengers">
+<img src="THE AVENGERS.webp">
+
 <h3>The Avengers</h3>
+
 <p>⭐ 8.9/10</p>
+
 <p>🎭 Superhero</p>
 
 </div>
 
 <div class="card movie-card"
-onclick="openMovie('Fast & Furious','High-speed racing, action and family adventures.','8.3/10','FAST AND FURIOUS.webp')">
+onclick="openMovie(
+'Fast & Furious',
+'High-speed racing, action and family adventures.',
+'8.3/10',
+'FAST AND FURIOUS.webp'
+)">
 
-<img src="FAST AND FURIOUS.webp" alt="Fast & Furious">
+<img src="FAST AND FURIOUS.webp">
+
 <h3>Fast & Furious</h3>
+
 <p>⭐ 8.3/10</p>
+
 <p>🎭 Racing, Action</p>
 
 </div>
 
 <div class="card movie-card"
-onclick="openMovie('Rockstar','A passionate musician struggles through love and fame.','8.1/10','ROCKSTAR.webp')">
+onclick="openMovie(
+'Rockstar',
+'A passionate musician struggles through love and fame.',
+'8.1/10',
+'ROCKSTAR.webp'
+)">
 
-<img src="ROCKSTAR.webp" alt="Rockstar">
+<img src="ROCKSTAR.webp">
+
 <h3>Rockstar</h3>
+
 <p>⭐ 8.1/10</p>
+
 <p>🎭 Musical, Drama</p>
 
 </div>
@@ -192,3 +229,4 @@ onclick="openMovie('Rockstar','A passionate musician struggles through love and 
 
 </body>
 </html>
+```
