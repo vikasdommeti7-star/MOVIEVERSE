@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +8,30 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
-<header>
-    <nav>
-        <h1>MOVIEVERSE</h1>
+<body>
 
-        <ul>
-            <li>Home</li>
-            <li>Trending</li>
-            <li>Top Rated</li>
-            <li>Upcoming</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+<header>
+<nav>
+<h1>MOVIEVERSE</h1>
+
+<ul>
+<li>Home</li>
+<li>Trending</li>
+<li>Top Rated</li>
+<li>Upcoming</li>
+<li>Contact</li>
+</ul>
+</nav>
 </header>
 
 <section class="hero">
-    <div class="hero-content">
-        <h1>Unlimited Movies, Reviews & Entertainment</h1>
-        <p>Discover trending movies from around the world.</p>
+<div class="hero-content">
+<h1>Unlimited Movies, Reviews & Entertainment</h1>
+<p>Discover trending movies from around the world.</p>
 
-        <input type="text" placeholder="Search Movies..." class="search-box">
-
-        <button class="btn">Explore Now</button>
-    </div>
+<input type="text" placeholder="Search Movies..." class="search-box">
+<button class="btn">Explore Now</button>
+</div>
 </section>
 
 <section class="movies-section">
@@ -38,46 +40,34 @@
 
 <div class="movies">
 
-<div class="card">
-    <div class="movie-card"
-onclick="openMovie(
-'Baahubali 2',
-'An epic historical action film directed by S.S. Rajamouli.',
-'8.8/10',
-'Baahubali 2.jpeg'
-)">
-<img src="Baahubali 2.jpeg">
+<div class="card movie-card"
+onclick="openMovie('Baahubali 2','An epic historical action film directed by S.S. Rajamouli.','8.8/10','Baahubali 2.jpeg')">
+
+<img src="Baahubali 2.jpeg" alt="Baahubali 2">
 <h3>Baahubali 2</h3>
 <p>⭐ 8.8/10</p>
 <p>🎭 Action, Drama</p>
+
 </div>
 
-<div class="card">
-    <div class="movie-card"
-onclick="openMovie(
-'RRR',
-'A historical action drama directed by S.S. Rajamouli.',
-'8.7/10',
-'RRR.jpeg'
-)">
-<img src="RRR.jpeg">
+<div class="card movie-card"
+onclick="openMovie('RRR','A historical action drama directed by S.S. Rajamouli.','8.7/10','RRR.jpeg')">
+
+<img src="RRR.jpeg" alt="RRR">
 <h3>RRR</h3>
 <p>⭐ 8.7/10</p>
 <p>🎭 Action, Historical</p>
+
 </div>
 
-<div class="card">
-    <div class="movie-card"
-onclick="openMovie(
-'Spider-Man',
-'Peter Parker balances his life as a student and superhero.',
-'8.5/10',
-'SPIDERMAN.webp'
-)">
-<img src="SPIDERMAN.webp">
+<div class="card movie-card"
+onclick="openMovie('Spider-Man','Peter Parker balances his life as a student and superhero.','8.5/10','SPIDERMAN.webp')">
+
+<img src="SPIDERMAN.webp" alt="Spider-Man">
 <h3>Spider-Man</h3>
 <p>⭐ 8.5/10</p>
 <p>🎭 Action, Sci-Fi</p>
+
 </div>
 
 </div>
@@ -90,46 +80,34 @@ onclick="openMovie(
 
 <div class="movies">
 
-<div class="card">
-    <div class="movie-card"
-onclick="openMovie(
-'The Avengers',
-"Earth's mightiest heroes unite to save the world.",
-'8.9/10',
-'THE AVENGERS.webp'
-)">
-<img src="THE AVENGERS.webp">
+<div class="card movie-card"
+onclick="openMovie('The Avengers','Earths mightiest heroes unite to save the world.','8.9/10','THE AVENGERS.webp')">
+
+<img src="THE AVENGERS.webp" alt="The Avengers">
 <h3>The Avengers</h3>
 <p>⭐ 8.9/10</p>
 <p>🎭 Superhero</p>
+
 </div>
 
-<div class="card">
-    <div class="movie-card"
-onclick="openMovie(
-'Fast & Furious',
-'High-speed racing, action and family adventures.',
-'8.3/10',
-'FAST AND FURIOUS.webp'
-)">
-<img src="FAST AND FURIOUS.webp">
+<div class="card movie-card"
+onclick="openMovie('Fast & Furious','High-speed racing, action and family adventures.','8.3/10','FAST AND FURIOUS.webp')">
+
+<img src="FAST AND FURIOUS.webp" alt="Fast & Furious">
 <h3>Fast & Furious</h3>
 <p>⭐ 8.3/10</p>
 <p>🎭 Racing, Action</p>
+
 </div>
 
-<div class="card">
-    <div class="movie-card"
-onclick="openMovie(
-'Rockstar',
-'A passionate musician struggles through love and fame.',
-'8.1/10',
-'ROCKSTAR.webp'
-)">
-<img src="ROCKSTAR.webp">
+<div class="card movie-card"
+onclick="openMovie('Rockstar','A passionate musician struggles through love and fame.','8.1/10','ROCKSTAR.webp')">
+
+<img src="ROCKSTAR.webp" alt="Rockstar">
 <h3>Rockstar</h3>
 <p>⭐ 8.1/10</p>
 <p>🎭 Musical, Drama</p>
+
 </div>
 
 </div>
@@ -156,28 +134,31 @@ onclick="openMovie(
 
 <h3>MovieVerse</h3>
 
-<p>
-Premium Movie Information Platform
-</p>
+<p>Premium Movie Information Platform</p>
 
-<p>
-Created for Cloud Computing Internship
-</p>
+<p>Created for Cloud Computing Internship</p>
 
 </footer>
-</html>
+
 <div id="movieModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
 
-        <img id="modalPoster" src="" alt="Movie Poster">
+<div class="modal-content">
 
-        <h2 id="modalTitle"></h2>
+<span class="close">&times;</span>
 
-        <p id="modalDesc"></p>
+<img id="modalPoster" src="" alt="Movie Poster">
 
-        <p><strong>⭐ Rating:</strong> <span id="modalRating"></span></p>
-    </div>
+<h2 id="modalTitle"></h2>
+
+<p id="modalDesc"></p>
+
+<p>
+<strong>⭐ Rating:</strong>
+<span id="modalRating"></span>
+</p>
+
+</div>
+
 </div>
 
 <script src="script.js"></script>
